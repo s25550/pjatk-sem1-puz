@@ -1,0 +1,18 @@
+6a
+
+
+
+========================
+
+6b
+
+Po rozłożeniu prostopadłościennej szopy "na płasko", część z jej boków tworzy prostokąt o bokach długości a oraz b+c. Należy policzyć przekątną tego prostokąta, czyli długość przeciwprostokątnej trójkąta:
+d = sqrt( a^2 + (b + c)^2 )
+
+
+========================
+
+6c
+
+Odpowiedzią do tego zadania jest mediana, czyli wartość środkowa.
+Odpowiedź: Wynająłbym mieszkanie E znajdujące się w odległości 5,1 km od lewego brzegu ulicy.

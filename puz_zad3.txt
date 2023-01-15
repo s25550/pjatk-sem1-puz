@@ -1,0 +1,126 @@
+3a
+
+x - cena biletu przed obniżką
+y - ilość klientów przed obniżką
+xy - dochód z biletów przed obniżką
+z - obniżka
+1,5y - ilość klientów po obniżce
+1,2xy - dochód z biletów po obniżce
+
+(1 - z) * x * 1,5y = 1,2xy
+(x - xz) * 1,5y = 1,2xy
+1,5xy - 1,5xyz = 1,2xy
+0,3xy = 1,5xyz
+z = 0,3xy / 1,5xy
+z = 0,2 = 20%
+
+Odpowiedź: Cena biletu została zredukowana o 20%.
+
+=======================
+
+3b
+
+g > s > b > 0
+g, s, b należą do C
+
+g + s + b >= 6 - minimalna liczba punktów do zdobycia przez wszystkich uczestników w jednej dyscyplinie (zakładając, że g = 3, s = 2 i b = 1)
+
+x - liczba dyscyplin
+x > 1, ponieważ są minimum 2 dyscypliny (skok w dal, który wygrał Babacki oraz wyścig na 400 metrów)
+
+22 - suma punktów Abackiego
+9 - suma punktów Babackiego
+9 - suma punktów Cabackiego
+
+Babacki wygrał co najmniej jedną dyscyplinę (co najmniej raz zdobył g punktów)
+
+22 + 9 + 9 = 40 - suma punktów wszystkich uczestników (liczba punktów możliwych do zebrania przez wszystkich uczestników z racji na brak remisów)
+
+(g + s + b) * x = 40
+x = 40 / (g + s + b)
+
+x należy do zbioru dzielników liczby 40 (wyłączając 1 z wcześniejszego założenia), czyli {2, 4, 5, 8, 10, 20, 40}, ponieważ (g + s + b) musi być liczbą całkowitą, więc x również musi być liczbą całkowitą
+
+x nie może być równy 8, 10, 20, 40, ponieważ przyjmując, że x = 8 i mając sumę wszystkich punktów równą 40, na każdą dyscyplinę przypadałoby 5 punktów do rozdania między 3 uczestników, a z wcześniejszego założenia wiadomo, że g + s + b >= 6 (analogicznie dla 10, 20 i 40 dyscyplin do rozdania byłyby kolejno 4 punkty, 2 punkty i 1 punkt)
+
+x należy do {2, 4, 5}
+
+rozpatrywane trzy przypadki:
+
+==========
+dla x = 2:
+==========
+
+2 = 40 / (g + s + b)
+g + s + b = 20 - liczba punktów przypadających na jedną dyscyplinę
+
+g + s = 9 lub g + b = 9 - liczba punktów Babackiego, który wygrał co najmniej jedną dyscyplinę (w tym wypadku wygrał tylko jedną z dwóch dyscyplin, ponieważ dla g + g = 9, g nie byłoby liczbą całkowitą, ponadto wygrywając obie dyscypliny, miałby największą liczbę punktów ze wszystkich uczestników)
+
+Cabacki zdobył tyle samo punktów, co Babacki, więc jednocześnie musiał zająć te same miejsca, co Babacki (w innych dyscyplinach, ze względu na brak remisów; jednocześnie warto podkreślić, że obaj uczestnicy nie mogli zdobyć takiej samej ilości punktów w obu dyscyplinach każdy, gdyż suma punktów każdego z nich jest nieparzysta), więc:
+s + g = 9 lub b + g = 9 - liczba punktów Cabackiego
+
+jeśli Babacki w drugiej dyscyplinie zajął drugie miejsce (g + s = 9), to Cabacki musiałby w niej zająć pierwsze miejsce oraz drugie miejsce w pierwszej dyscyplinie (s + g = 9), co oznaczałoby, że Abacki w obu dyscyplinach zajął trzecie miejsce (b + b = 22), z czego wynikałoby, że b = 11 oraz że b > g i b > s, co jest sprzeczne z pierwszymi założeniami
+
+analogicznie, jeśli Babacki w drugiej dyscyplinie zajął trzecie miejsce (g + b = 9), to Cabacki musiałby w niej zająć pierwsze miejsce oraz trzecie miejsce w pierwszej dyscyplinie (b + g = 9), co oznaczałoby, że Abacki w obu dyscyplinach zajął drugie miejsce (s + s = 22), z czego wynikałoby, że s = 11 oraz że s > g, co jest sprzeczne z pierwszymi założeniami
+
+x nie może być równy 2
+
+==========
+dla x = 4:
+==========
+
+4 = 40 / (g + s + b)
+g + s + b = 10 - liczba punktów przypadających na jedną dyscyplinę
+
+możliwe kombinacje (z uwzględnieniem g > s > b > 0):
+g = 7, s = 2, b = 1
+g = 6, s = 3, b = 1
+g = 5, s = 4, b = 1
+g = 5, s = 3, b = 2
+
+Babacki tylko raz zdobył maksymalną liczbę punktów, gdyż minimalna wartość g dla powyższych kombinacji wynosi 5, a zdobycie g punktów więcej niż raz (np. g + g = 5 + 5 = 10) daje sumę większą od liczby punktów zdobytych przez Babackiego (9), więc Babacki raz zajął pierwsze miejsce i trzy razy zajął jedno z pozostałych dwóch miejsc
+
+jedyna możliwa kombinacja:
+g = 6, s = 3, b = 1
+przy czym Babacki zdobył g + b + b + b = 9 punktów (pozostałe kombinacje nie umożliwiają zdobycia przez Babackiego g punktów przy czterech dyscyplinach)
+
+do rozdysponowania między Abackim i Cabackim pozostało:
+3 razy g punktów, 4 razy s punktów oraz 1 raz b punktów
+minimalna liczba punktów możliwa do zdobycia w czterech dyscyplinach:
+3 * s + 1 * b = 9 + 1 = 10
+Cabacki zdobył 9 punktów
+
+x nie może być równy 4
+
+==========
+dla x = 5:
+==========
+
+5 = 40 / (g + s + b)
+g + s + b = 8 - liczba punktów przypadających na jedną dyscyplinę
+
+możliwe kombinacje (z uwzględnieniem g > s > b > 0):
+g = 5, s = 2, b = 1
+g = 4, s = 3, b = 1
+
+Babacki tylko raz zdobył maksymalną liczbę punktów, gdyż zakładając, że g = 4, minimalna liczba punktów do zdobycia przy dwóch pierwszych miejscach dla pięciu dyscyplin wynosi g + g + b + b + b = 11 punktów, a Babacki zdobył jedynie 9 punktów (analogicznie dla g = 5, minimalna liczba punktów wynosi 13 punktów), więc Babacki raz zajął pierwsze miejsce i cztery razy zajął jedno z pozostałych dwóch miejsc
+
+jedyna możliwa kombinacja:
+g = 5, s = 2, b = 1
+przy czym Babacki zdobył g + b + b + b + b = 9 punktów (druga kombinacja nie umożliwia zdobycia przez Babackiego g punktów przy pięciu dyscyplinach)
+
+do rozdysponowania między Abackim i Cabackim zostało:
+4 razy g punktów, 5 razy s punktów oraz 1 raz b punktów
+
+Cabacki zdobył 9 punktów, przy czym nie mógł ani razu zająć piewszego miejsca, gdyż musiałby zająć trzecie miejsce w pozostałych czterech dyscyplinach, a do rozdysponowania zostało tylko jedno trzecie miejsce
+
+Cabacki zdobył b + s + s + s + s = 9 punktów
+
+dla Abackiego pozostało:
+4 razy g punktów oraz 1 raz s punktów
+więc Abacki cztery razy zajął pierwsze miejsce i raz drugie miejsce notując przy tym 22 punkty (5 + 5 + 5 + 5 + 2 = 22)
+
+Abacki zajął drugie miejsce w skoku w dal, ponieważ jest to jedyna dyscyplina, w której nie zajął pierwszego miejca (zajął je Babacki)
+Cabacki zajął trzecie miejsce w skoku w dal, a skoro we wszystkich pozostałych dyscyplinach zajął drugie miejsce, zajął je również w biegu na 400 metrów
+
+Odpowiedź: Cabacki był drugi w wyścigu na 400 metrów.

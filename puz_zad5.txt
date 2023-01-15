@@ -1,0 +1,156 @@
+5a
+
+Przyjmijmy numerację siedzeń przy stole od 1 do 8 zgodnie z ruchem wskazówek zegara:
+1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 1 -> ...
+
+A więc "siedzieć na prawo od kogoś" oznacza siedzieć na miejscu z numerem o 1 mniejszym od danej osoby (w przypadku miejsca nr 1 osoba po prawej stronie siedzi na miejscu nr 8).
+
+Przyjmijmy, że mężczyźni zasiedli w miejscach oznaczonych liczbą nieparzystą, natomiast kobiety - liczbą parzystą.
+
+Przyjmijmy, że Pani Biała usiadła na miejscu nr 2. W tym wypadku Pan Zielony usiadł na miejscu nr 3 (na lewo od Pani Białej), a Pan Czarny - nr 1 (na prawo od Pani Białej).
+
+Na miejscu nr 4 mogła zasiąść Pani Czarna lub Pani Brązowa, gdyż Pani Zielona nie może usiąść obok Pana Zielonego.
+
+Na miejscu nr 8 mogła zasiąść Pani Brązowa lub Pani Zielona, gdyż Pani Czarna nie może usiąść obok Pana Czarnego.
+
+Na miejscu nr 6 mogła zasiąść Pani Zielona (o ile nie usiadła na miejscu nr 8) lub Pani Czarna (o ile nie usiadła na miejscu nr 4).
+
+Na miejscach nr 5 i 7 usiedli Pan Biały i Pan Brązowy w zależności od tego, na których miejscach usiadła Pani Brązowa. Jeśli Pani Brązowa usiadła na miejscu nr 4, Pan Brązowy usiadł na miejscu nr 7, a Pan Biały - nr 5. Jeśli Pani Brązowa usiadła na miejscu nr 8, Pan Brązowy usiadł na miejscu nr 5, a Pan Biały - nr 7.
+
+Pani Brązowa nie mogła usiąść na miejscu nr 6, gdyż sąsiadowałaby jednocześnie z miejscami nr 5 i 7, na których nie mógłby usiąść Pan Brązowy.
+
+Rozstawienie 1:
+1. Pan Czarny
+2. Pani Biała
+3. Pan Zielony
+4. Pani Czarna
+5. Pan Brązowy
+6. Pani Zielona
+7. Pan Biały
+8. Pani Brązowa
+
+Rozstawienie 2:
+1. Pan Czarny
+2. Pani Biała
+3. Pan Zielony
+4. Pani Brązowa
+5. Pan Biały
+6. Pani Czarna
+7. Pan Brązowy
+8. Pani Zielona
+
+W obu przypadkach na miejscu z numerem o 1 mniejszym od miejsca, na którym siedziała Pani Zielona, jest Pan Brązowy.
+
+Odpowiedź: Na prawo od Pani Zielonej siedział Pan Brązowy.
+
+======================
+
+5b
+
+Plemię A - osoby prawdomówne
+Plemię B - osoby zaczynające rozmowę od zdania prawdziwego, następnie zawsze kłamią
+Plemię C - osoby zaczynające rozmowę od zdania prawdiwego, następnie na przemian kłamią i mówią prawdę
+
+Rozmowy nie mogła przeprowadzić osoba z plemienia A, ponieważ skłamałaby mówiąc, że jej osadą jest osada C.
+
+Jeśli zadzwoniła osoba z plemienia B, skłamałaby mówiąc, że płonie "ich" osada, czyli osada B oraz skłamałaby mówiąc, że "ich" osada, to osada C. W tym przypadku pożar mógł wybuchnąć w osadzie A lub C.
+
+Jeśli zadzwoniła osoba z plemienia C, skłamała mówiąc, że płonie "ich" osada, czyli osada C oraz powiedziałaby prawdę, że "ich" osada to osada C. W tym przypadku pożar mógł wybuchnąć w osadzie A lub B.
+
+Utknąłem na tym zadaniu. Dużo osób powiedziało mi, że odpowiedzią jest, że "płonie osada A, dzwoniła osoba z osady B", jednak odpowiedź osoby z osady B, że jej osadą jest osada C (co oczywiście jest kłamstwem, bo ta osoba zawsze kłamie), nie wyklucza wcale możliwości, że pożar jest w osadzie C, ponieważ ta osoba nie mówi, że pożaru nie ma w osadzie C, tylko mówi, że ona jest z osady B (po uwzględnieniu i zinterpretowaniu jej kłamstwa). Powiedzenie, że "moją osadą jest osada C", bo tego dotyczyło pytanie "Która to?", nie oznacza, że "płonie osada C".
+
+Jednak takie rozwiązanie nie jest jednoznaczne, mogę być w dużym błędzie i czegoś nie rozumieć, tak więc odpowiedź brzmi:
+
+Straż powinna pojechać do osady A.
+
+======================
+
+5c
+
+Istnieje 12 możliwości rozmieszczenia monet w pudełkach (poniżej).
+
+Spośród tych 12 możliwości:
+- 5 razy występuje sytuacja, w której żadne z pudełek nie posiada liczby monet równej numerowi pudełka,
+- 3 razy występuje sytuacja, w której 1 pudełko zawiera liczbę monet równą numerowi pudełka,
+- 1 raz występuje sytuacja, w której 2 pudełka zawierają liczbę monet równą numerowi pudełka oraz
+- 2 razy występuje sytuacja, w której 3 pudełka zawierają liczbę monet równą numerowi pudełka.
+
+Sędzia mówiąc, że informacja o liczbie pudełek, których numery są zgodne z liczbą monet wewnątrz pudełek pozwoliłaby określić puste pudełko, zdradza również informację, że spośród 12 możliwości rozmieszczenia monet w pudełkach, występuje tylko jedna taka sytuacja, w której numery pudełek są zgodne z liczbą monet w tych pudełkach, więc chodzi o rozmieszczenie z 2 pudełkami:
+
+1.-------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+7  10   1   3   6  11   8   4   5   9   0   2
+
+---------------------------------------------
+
+W rozmieszczeniu tym pudełka nr 3 i 9 posiadają kolejno 3 monety i 9 monet, a pudełko nr 7 posiada 0 monet.
+
+Odpowiedź: Mężczyzna wskazał pudełko nr 7.
+
+
+
+Górny rząd: ilość monet
+Dolny rząd: nr pudełka
+
+1.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+7  10   1   3   6  11   8   4   5   9   0   2
+
+2.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+2   7  10   1   3   6  11   8   4   5   9   0
+
+3.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+0   2   7  10   1   3   6  11   8   4   5   9
+
+4.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+9   0   2   7  10   1   3   6  11   8   4   5
+
+5.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+5   9   0   2   7  10   1   3   6  11   8   4
+
+6.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+4   5   9   0   2   7  10   1   3   6  11   8
+
+7.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+8   4   5   9   0   2   7  10   1   3   6  11
+
+8.--------------------------------------------
+
+ 0   1   2   3   4   5   6   7   8   9  10  11
+11   8   4   5   9   0   2   7  10   1   3   6
+
+9.--------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+6  11   8   4   5   9   0   2   7  10   1   3
+
+10.-------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+3   6  11   8   4   5   9   0   2   7  10   1
+
+11.-------------------------------------------
+
+0   1   2   3   4   5   6   7   8   9  10  11
+1   3   6  11   8   4   5   9   0   2   7  10
+
+12.-------------------------------------------
+
+ 0   1   2   3   4   5   6   7   8   9  10  11
+10   1   3   6  11   8   4   5   9   0   2   7
+
+----------------------------------------------

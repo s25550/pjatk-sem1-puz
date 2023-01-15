@@ -1,0 +1,23 @@
+1a
+
+Pierwszy turysta powinien wziąć całe $6, gdyż przyniósł 400g ryżu, a zjadł tylko 200g, natomiast drugi turysta przyniósł tyle samo ryżu, ile zjadł.
+
+1b
+
+"Tomasz ma tyle dzieci, co Piotr i Jan razem", czyli ma 3 dzieci. Jan ma 1, Piotr ma 2 albo Jan ma 2, Piotr ma 1. Tomasz nie może mieć więcej niż 3 dzieci, ponieważ każdy z panów ma co najmniej 1 dziecko. Nie może mieć również mniej dzieci, ponieważ mamy tylko 6 dzieci.
+Wniosek: Tomasz ma 3 dzieci. Ponadto ma co najmniej 2 chłopców (2 chłopców + 1 dziewczynka lub 3 chłopców)
+"Jan ma o jedno dziecko więcej niż Babacki", czyli Jan = Babacki + 1.
+Jan i Piotr mają 3 dzieci (wiemy z pierwszego wniosku), więc Jan + Piotr = 3. Pod Jana podstawiamy Babacki + 1:
+Babacki + 1 + Piotr = 3
+Babacki + Piotr = 2
+Czy Babacki i Piotr (jako dwie oddzielne osoby) mogą mieć po 1 dziecku? Nie, ponieważ (zakładając, że Jan jest Babacki) obaj muszą mieć 3 dzieci (2+1), żeby mieć tyle samo co Tomasz. Tomasz również nie może być Babacki, bo ma 3 dzieci.
+Wniosek: Piotr ma na nazwisko Babacki.
+Pozostają nam: Tomasz Abacki i Jan Cabacki albo Tomasz Cabacki i Jan Abacki.
+Nie wiemy wciąż ile dzieci ma Piotr Babacki, a ile Jan.
+"Cabacki ma tylu chłopców co (Piotr) Babacki."
+Jeśli Tomasz jest Cabacki i ma tylu chłopców, co Piotr Babacki, obaj Panowie muszą mieć dwóch chłopców, ponieważ Piotr Babacki ma maksymalnie 2 dzieci, a Tomasz nie może mieć 1 chłopca, ponieważ musiałby mieć 2 dziewczynki. W tym wypadku Jan ma na nazwisko Abacki i ma 1 chłopca, co nie może być prawdą, ponieważ "Jan ma o jedno dziecko więcej niż (Piotr) Babacki", który ma 2 dzieci.
+Wniosek: Tomasz ma na nazwisko Abacki, Jan ma na nazwisko Cabacki. Jan Cabacki ma 2 dzieci, Piotr Babacki ma 1 dziecko.
+Jeśli Piotr Babacki miałby 1 dziewczynkę, Jan Cabacki miałby 2 chłopców, a Tomasz Abacki 3 chłopców. W tej sytuacji Cabacki nie ma tylu chłopców, co Babacki.
+Wniosek: Piotr Babacki ma 1 chłopca. Jan Cabacki ma 1 chłopca i 1 dziewczynkę. Tomasz Abacki ma 3 chłopców.
+
+Odpowiedź: Abacki ma na imię Tomasz i ma 3 chłopców.

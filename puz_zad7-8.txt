@@ -1,0 +1,66 @@
+7a
+
+Istnieją trzy możliwe stytuacje:
+1. pierwsza kula (niewiadomego koloru) jest czarna, wyciągnięta została ta sama biała kula, która została później dołożona,
+2. pierwsza kula (niewiadomego koloru) jest biała, wyciągnięta została ta sama biała kula, która została później dołożona,
+3. pierwsza kula (niewiadomego koloru) jest biała i ona została wyciągnięta, więc druga biała kula została w worku.
+
+Odpowiedź: Prawdopodobieństwo, że kula, która została w worku jest czarna, wynosi 1/3.
+
+==================
+
+7b
+
+
+
+==================
+
+8a
+
+Początkowe oznaczenie pudełek:
+1. BB
+2. CC
+3. BC
+
+Istnieją 2 możliwe oznaczenia pudełek po zamianie tabliczek z uwzględnieniem reguły, że żadna tabliczka nie przedstawia prawidłowo jakie kulki są w danym pudełku:
+------
+1. BC
+2. BB
+3. CC
+------
+1. CC
+2. BC
+3. BB
+------
+
+Kulkę należy wylosować z pudełka oznaczonego jako BC. Obie kulki w tym pudełku mogą być albo tylko białe, albo tylko czarne.
+
+Jeśli wylosowana kulka jest biała, to pudełko oznaczone jako BC tak naprawdę jest BB, pudełko oznaczone jako BB tak naprawdę jest CC, a pudełko oznaczone jako CC tak naprawdę jest BC.
+
+Jeśli wylosowana kulka jest czarna, to pudełko oznaczone jako BC tak naprawdę jest CC, pudełko oznaczone jako CC tak naprawdę jest BB, a pudełko oznaczone jako BB tak naprawdę jest BC.
+
+Odpowiedź: Zdecyduję się wylosować kulkę z pudełka BC.
+
+==================
+
+8b
+
+c - liczba chłopców
+ct - liczba chłopców, którzy rozwiązali zadanie
+cn - liczba chłopców, którzy nie rozwiązali zadania
+c = ct + cn
+
+d - liczba dziewcząt
+dt - liczba dziewcząt, które rozwiązały zadanie
+dn - liczba dziewcząt, które nie rozwiązały zadania
+d = dt + dn
+
+liczba dziewcząt, które nie rozwiązały zadania jest o 1 mniejsza od liczby chłopców, którzy rozwiązali zadanie
+dn = ct - 1
+d = dt + ct - 1
+
+Sprawdzenie, czy liczba wszystkich studentów, którzy rozwiązali zadanie (ct + dt) jest większa niż liczba wszystkich dziewcząt (d)
+ct + dt > dt + ct - 1
+0 > -1
+
+Odpowiedź: Liczba wszystkich studentów, którzy rozwiązali zadanie jest większa niż liczba wszystkich dziewcząt.

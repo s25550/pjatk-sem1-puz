@@ -1,0 +1,37 @@
+4a
+
+Czynność wkładania pudełek do pustych pudełek można podzielić na kroki.
+W kroku zerowym (przed umieszczeniem nowych pudełek) na stole stoi 100 pustych i zero pełnych pudełek. W kroku pierwszym przybywa 8 nowych pudełek, a jedno z pustych pudełek zostaje wypełnione, więc suma pustych pudełek zostaje zwiększona o 7, a pełnych - o 1. W każdym kolejnym kroku suma pustych i pełnych pudełek zwiększa się tak samo. To, czy nowe pudełka zostały włożone do którychś z pierwszych stu pudełek, czy do którychś z ośmiu nowych mniejszych pudełek, nie ma znaczenia, gdyż w obu przypadkach suma pustych i pełnych pudełek zwiększa się tak samo. Czynność ta powtarzana jest do momentu otrzymania 233 pustych pudełek. Jako że z każdym krokiem przybywa jedno pełne pudełko, liczba kroków jest równa liczbie pełnych pudełek.
+
+x - liczba kroków, liczba pełnych pudełek
+100 - liczba pustych pudełek w kroku zerowym
+233 - liczba pustych pudełek w kroku x
+233 - 100 = 133 - liczba pustych pudełek dodanych w x krokach
+
+Skoro z każdym krokiem dodawanych jest 7 pustych pudełek, a po x krokach liczba pustych pudełek zwiększyła się o 133, liczbę kroków można wyliczyć ze wzoru:
+
+x = 133 / 7 = 19
+
+Jeśli po 19 krokach na stole stały 233 puste pudełka oraz 19 pełnych pudełek, to suma pudełek stojących na stole wynosi:
+
+233 + 19 = 252
+
+Odpowiedź: Na stole są 252 pudełka.
+
+=============
+
+4b
+
+Liczba białych pereł jest równa liczbie czarnych pereł i obie liczby są parzyste, tak więc liczba wszystkich pereł w naszyjniku jest również parzysta.
+
+Aby zagwarantować podział pereł w taki sposób, żeby po obu stronach występowała połowa pereł danego koloru, należy wykonać cięcie dzielące liczbę pereł na pół.
+
+Jeśli liczba pereł danego koloru (np. czarnego) po jednej stronie, jest równa liczbie pereł tego samego koloru po drugiej stronie, to wiedząc, że cięcie zostało wykonane w taki sposób, by podzielić naszyjnik na pół, automatycznie liczba pereł drugiego koloru (np. białego) została również podzielona na pół (po obu stronach występuje taka sama liczba pereł drugiego koloru). Dla przykładu, mając 20 pereł w naszyjniku (w tym 10 pereł białych i 10 pereł czarnych), dzieląc naszyjnik tak, by po jednej i drugiej stronie było po 5 czarnych pereł oraz by zachować podział naszyjnika na dwie równe części, automatycznie liczba pozostałych 10 pereł białych również zostaje podzielona na pół, czyli po 5 białych pereł po obu stronach.
+
+W przypadku, gdy cięcie podzieli perły równomiernie (po obu stronach liczba pereł danego koloru będzie równa), zadanie jest zakończone.
+
+W innym wypadku, należy wykonać obrót naszyjnika o jedną perłę w dowolnym kierunku (zgodnie lub przeciwnie do ruchu wskazówek zegara), w efekcie czego liczba pereł danego koloru po jednej ze stron naszyjnika może się zwiększyć o 1, zmniejszyć o 1 lub pozostać bez zmian. W przypadku, gdy liczba pereł nie zmieni się lub po zmianie liczba pereł danego koloru po jednej ze stron dalej nie będzie równa liczbie pereł tego samego koloru po drugiej stronie, obrót należy powtórzyć. Za każdym razem obrót musi być wykonywany w tym samym kierunku. Granicą wykonywanej czynności jest obrót naszyjnika o 180 stopni, po którym perły z jednej strony naszyjnika zostaną przeniesione na drugą stronę, w związku z czym wynik cięcia pozostaje ten sam.
+
+Jeśli po obrocie liczba pereł danego koloru po jednej ze stron zostaje zwiększona o 1, to jednocześnie liczba pereł tego samego koloru po drugiej stronie zostaje zmniejszona o 1 i vice versa.
+
+Skoro podczas obrotu liczba pereł danego koloru po danej stronie może zmienić się co najwyżej o 1, a po obrocie naszyjnika o 180 stopni perły zostają przeniesione na drugą stronę, czyli występuje odbicie lustrzane naszyjnika przed obrotem, któryś z wykonanych wcześniej obrotów musiał zagwarantować takie ułożenie pereł, że po jednej i drugiej stronie naszyjnika wystąpiła taka sama liczba pereł danego koloru, co jednocześnie gwarantuje takie ułożenie pereł obu kolorów.

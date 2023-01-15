@@ -1,0 +1,40 @@
+2a
+
+Muszę odwrócić karty A i 7.
+Muszę sprawdzić, czy na odwrocie karty z A znajduje się liczba parzysta. Muszę również sprawdzić, czy przypadkiem na odwrocie karty z 7 nie znajduje się wielka litera. Jeśli tak, reguła nie jest prawdziwa, gdyż każda wielka litera musi mieć na odwrocie liczbę parzystą. Nie muszę sprawdzać karty z 4, ponieważ nawet jeśli na odwrocie znajdowałaby się mała litera, to ona i tak nie neguje reguły.
+
+=======================
+
+2b
+
+S = v * t,
+gdzie:
+S oznacza drogę,
+v oznacza prędkość motorówki,
+t oznacza czas.
+
+Droga z prądem, podstawiam t = 2:
+S = 2 * (v + u),
+gdzie:
+v + u oznacza prędkość motorówki z prądem.
+
+Droga pod prąd, podstawiam t = 6:
+S = 6 * (v - u),
+gdzie:
+v - u oznacza prędkość motorówki pod prąd.
+
+Oba równania są równe S, więc można je do siebie przyrównać:
+2 * (v + u) = 6 * (v - u)
+
+Z powyższego równania wyliczam zależność między prędkością prądu i motorówki:
+v = 2u
+
+Podstawiam do wzoru na odległość między miastami A i B (z prądem):
+S = 2 * (2u + u)
+S = 6u
+
+Wyliczam czas, który tratwa potrzebuje na dopłynięcie z miasta A do miasta B:
+S : u = 6 [h]
+
+Odpowiedź:
+Podróż na tratwie z miasta A do miasta B zajęłaby 6 godzin.
